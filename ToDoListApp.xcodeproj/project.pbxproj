@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B19D08952D19B5920095DA4B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B19D08942D19B5920095DA4B /* FirebaseAuth */; };
+		B19D08972D19B5920095DA4B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B19D08962D19B5920095DA4B /* FirebaseFirestore */; };
+		B19D089D2D19B6230095DA4B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B19D089C2D19B61A0095DA4B /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		B19D08772D19B28F0095DA4B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +33,7 @@
 		B19D08662D19B28E0095DA4B /* ToDoListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B19D08762D19B28F0095DA4B /* ToDoListAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B19D08802D19B28F0095DA4B /* ToDoListAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B19D089C2D19B61A0095DA4B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B19D08952D19B5920095DA4B /* FirebaseAuth in Frameworks */,
+				B19D08972D19B5920095DA4B /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +84,7 @@
 		B19D085D2D19B28E0095DA4B = {
 			isa = PBXGroup;
 			children = (
+				B19D089C2D19B61A0095DA4B /* .gitignore */,
 				B19D08682D19B28E0095DA4B /* ToDoListApp */,
 				B19D08792D19B28F0095DA4B /* ToDoListAppTests */,
 				B19D08832D19B28F0095DA4B /* ToDoListAppUITests */,
@@ -112,6 +122,8 @@
 			);
 			name = ToDoListApp;
 			packageProductDependencies = (
+				B19D08942D19B5920095DA4B /* FirebaseAuth */,
+				B19D08962D19B5920095DA4B /* FirebaseFirestore */,
 			);
 			productName = ToDoListApp;
 			productReference = B19D08662D19B28E0095DA4B /* ToDoListApp.app */;
@@ -195,6 +207,9 @@
 			);
 			mainGroup = B19D085D2D19B28E0095DA4B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B19D08932D19B5920095DA4B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B19D08672D19B28E0095DA4B /* Products */;
 			projectDirPath = "";
@@ -212,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B19D089D2D19B6230095DA4B /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,11 +415,11 @@
 				DEVELOPMENT_TEAM = 4UM8R87G2R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "To Do List";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,11 +444,11 @@
 				DEVELOPMENT_TEAM = 4UM8R87G2R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "To Do List";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,6 +574,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B19D08932D19B5920095DA4B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B19D08942D19B5920095DA4B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B19D08932D19B5920095DA4B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B19D08962D19B5920095DA4B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B19D08932D19B5920095DA4B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B19D085E2D19B28E0095DA4B /* Project object */;
 }
